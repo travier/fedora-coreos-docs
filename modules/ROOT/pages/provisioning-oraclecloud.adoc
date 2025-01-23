@@ -37,7 +37,7 @@ Fedora CoreOS is designed to be updated automatically, with different schedules 
 ----
 arch="x86_64" # or aarch64
 podman run --security-opt label=disable --pull=always --rm -v .:/data -w /data \
-    quay.io/coreos/coreos-installer:release download -s stable -p qemu -f qcwo2 -a "${arch}"
+    quay.io/coreos/coreos-installer:release download -s stable -p qemu -f qcow2 -a "${arch}"
 ----
 +
 Note this is just using `coreos-installer` as a tool to download the QCOW2 disk image.
